@@ -1,24 +1,19 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 
-/**
- * Generated class for the FilmsPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 
+@IonicPage()
 @Component({
   selector: 'page-films',
   templateUrl: 'films.html',
 })
 export class FilmsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad FilmsPage');
+ pushPage(){
+    this.navCtrl.push('FilmDetails')
   }
 
 }
