@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, IonicPage } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 
 
 @IonicPage()
@@ -12,8 +12,12 @@ export class FilmsPage {
   constructor(public navCtrl: NavController) {
   }
 
- pushPage(){
-    this.navCtrl.push('FilmDetails')
+  openDetails() {
+    this.navCtrl.push('FilmDetails');
+  }
+
+ goToPlanets(){
+    this.navCtrl.parent.select(2);
   }
 
 }
