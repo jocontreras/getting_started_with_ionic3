@@ -1,6 +1,6 @@
 # Exploring Ionic3
 
-This is a repository of all the activities I have learned from Ionic Academy free courses.
+This is a repository of all the activities I have learned from [Ionic Academy](url) free courses.
 
 ## Course Coverage
 1. Day 1 - How to Get Started with Ionic and Angular
