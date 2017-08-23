@@ -13,9 +13,11 @@ export class FilmsPage {
   }
 
   openDetails() {
-    this.navCtrl.push('FilmDetails');
+    /*this.navCtrl.push('FilmDetails');*/
+    this.navCtrl.push('FilmDetails',{filmId: 2});
   }
 
+ 
  goToPlanets(){
     this.navCtrl.parent.select(2);
   }
