@@ -1,3 +1,4 @@
+import { ApiProvider } from './../../providers/api/api';
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import { Observable } from 'rxjs/Observable';
@@ -13,8 +14,8 @@ import 'rxjs/add/operator/map';
 export class FilmsPage {
   films: Observable<any>;
 
-  constructor(public navCtrl: NavController, public http: Http) {
-    this.films = this.http.get('http://swapi.co/api/films').map(res => res.json());
+  constructor(public navCtrl: NavController, public apiProvider: ApiProvider) {
+    this.films = this.apiProvider.getFilms();
   }
 
   openDetails(film) {
