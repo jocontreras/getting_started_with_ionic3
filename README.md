@@ -19,6 +19,7 @@ This is a repository of all the activities I have learned from [Ionic Academy](u
 
     ![screen shot 2017-08-23 at 9 36 04 am](https://user-images.githubusercontent.com/13605349/29605168-35e0ae94-87ea-11e7-9117-2935d08c90fc.png)
 3. Day 3 - How to Make HTTP Calls with Ionic
+   Integrate API data from: The Star Wars API -  http://swapi.co/
 
     **Basic HTTP Calls**
 
