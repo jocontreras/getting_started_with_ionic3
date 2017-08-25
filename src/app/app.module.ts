@@ -1,3 +1,4 @@
+import { ApiProvider } from './../providers/api/api';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -5,7 +6,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-
+import { HttpModule } from '@angular/http';
+import { PeoplePage } from '../pages/people/people';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,7 @@ import { MyApp } from './app.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -22,6 +25,7 @@ import { MyApp } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
+    ApiProvider,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

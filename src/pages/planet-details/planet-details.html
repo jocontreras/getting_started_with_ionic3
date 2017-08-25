@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ planet.name }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+        <ion-card-header>
+            {{ planet.opening_crawl }}
+            {{ planet.name }} Details
+        </ion-card-header>
+            <ion-list>
+                <ion-item>
+                    <ion-icon name="globe" item-start></ion-icon>
+                    Rotation Period: {{ planet.rotation_period }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="globe" item-start></ion-icon>
+                    Orbital Period: {{ planet.orbital_period }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="globe" item-start></ion-icon>
+                    Diameter: {{ planet.diameter }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="globe" item-start></ion-icon>
+                    Climate: {{ planet.climate }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="globe" item-start></ion-icon>
+                    Gravity: {{ planet.gravity }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="globe" item-start></ion-icon>
+                    Terrain: {{ planet.terrain }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="globe" item-start></ion-icon>
+                    Source Water: {{ planet.surface_water }}
+                </ion-item>
+            </ion-list>
+    </ion-card>
+</ion-content>

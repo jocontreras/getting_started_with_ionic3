@@ -1,5 +1,9 @@
+import { ApiProvider } from './../../providers/api/api';
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
+import { Observable } from 'rxjs/Observable';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 
 @IonicPage()
@@ -8,18 +12,13 @@ import { IonicPage, NavController } from 'ionic-angular';
   templateUrl: 'films.html',
 })
 export class FilmsPage {
+  films: Observable<any>;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public apiProvider: ApiProvider) {
+    this.films = this.apiProvider.getFilms();
   }
 
-  openDetails() {
-    /*this.navCtrl.push('FilmDetails');*/
-    this.navCtrl.push('FilmDetails',{filmId: 2});
+  openDetails(film) {
+    this.navCtrl.push('FilmDetails', {film: film});
   }
-
- 
- goToPlanets(){
-    this.navCtrl.parent.select(2);
-  }
-
 }
