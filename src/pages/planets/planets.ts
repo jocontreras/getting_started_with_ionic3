@@ -1,5 +1,9 @@
+import { ApiProvider } from './../../providers/api/api';
 import { Component } from '@angular/core';
-import { NavController, IonicPage } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Observable } from 'rxjs/Observable';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 @IonicPage()
 @Component({
@@ -7,8 +11,13 @@ import { NavController, IonicPage } from 'ionic-angular';
   templateUrl: 'planets.html',
 })
 export class PlanetsPage {
+  planets: Observable<any>;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public apiProvider: ApiProvider) {
+    this.planets = this.apiProvider.getPlanets();
   }
 
+  openDetails(planet) {
+    this.navCtrl.push('PlanetDetails', {planet: planet});
+  }
 }

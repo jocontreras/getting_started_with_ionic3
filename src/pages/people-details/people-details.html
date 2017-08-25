@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>{{ person.name }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <ion-card-header>
+            {{ person.opening_crawl }}
+            {{ person.name }} Personal Details
+        </ion-card-header>
+            <ion-list>
+                <ion-item>
+                    <ion-icon name="contact" item-start></ion-icon>
+                    Height: {{ person.height }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="contact" item-start></ion-icon>
+                    Weight: {{ person.mass }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="contact" item-start></ion-icon>
+                    Hair Color: {{ person.hair_color }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="contact" item-start></ion-icon>
+                    Skin Color: {{ person.skin_color }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="contact" item-start></ion-icon>
+                    Eye Color: {{ person.eye_color }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="contact" item-start></ion-icon>
+                    Birth Year: {{ person.birth_year }}
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="contact" item-start></ion-icon>
+                    Gender: {{ person.gender }}
+                </ion-item>
+            </ion-list>
+    </ion-card>
+</ion-content>
