@@ -23,7 +23,7 @@ This is a repository of all the activities I have learned from [Ionic Academy](u
 
     **Basic HTTP Calls**
 
-![crashcourse-ionic-push](https://user-images.githubusercontent.com/13605349/29605239-705f6b78-87ea-11e7-98eb-f49d8d386df4.gif)
+![crashcourse-ionic-list](https://user-images.githubusercontent.com/13605349/29704434-1b01ed04-897a-11e7-84ef-20d280707515.gif)
 (from: Ionic Academy)
 
     **Using Provider**
